@@ -8,23 +8,47 @@
     <title>Javascript Display</title>
 </head>
 
-<body>
+<body style=" border: 1px solid black; text-align: center; font-size: 25px; width: 400px; text-align: center;">
     <p id="username"></p>
     <p id="emp"></p>
     <p id="emp1"></p>
     <p id="type"></p>
+    <p id="empsal"></p>
     <script>
-        var name = "Veeresh";
+        var name = "DLITHE";
         const EmpDetails = {
-            empid: 100,
+            empid: 1001,
             empname: "chetan",
-            empdesignation: "HR"
+            empdesignation: "HR",
+            empsal: 10000,
+            emphra: Number,
+            empda: Number,
+            empgross: Number,
+            empit: Number,
+            empnet: Number
         };
+        EmpDetails.emphra = 0.73 * EmpDetails.empsal
+        EmpDetails.empda = 0.30 * EmpDetails.empsal
+        EmpDetails.empgross = EmpDetails.empda + EmpDetails.emphra + EmpDetails.empsal
+        EmpDetails.empit = EmpDetails.empgross * 0.30
+        EmpDetails.empnet = EmpDetails.empgross - EmpDetails.empit
         document.getElementById("username").innerHTML = name;
-        document.getElementById("emp").innerHTML = "Employee " + EmpDetails.empid + "'s name is " + EmpDetails.empname;
-        document.getElementById("emp1").innerHTML = EmpDetails.empname + " is in " + EmpDetails.empdesignation + " department";
-        document.getElementById("type").innerHTML =
-            typeof " " + "<br>" + typeof 10 + "<br>" + typeof 3.14 + "<br>" + typeof(3 + 4) + "<br>" + typeof(1234e5) + "<br>" + typeof(null) + "<br> <br>";
+        document.getElementById("emp").innerHTML = "Employee ID : " + EmpDetails.empid + "<br>" + " Name : " + EmpDetails.empname;
+        document.getElementById("emp1").innerHTML = EmpDetails.empname + " is in " +
+            EmpDetails.empdesignation + " department" + "<br>" +
+            "Employee Salary : " + EmpDetails.empsal + "<br>" +
+            "Employee HRA   : " + EmpDetails.emphra + "<br>" +
+            "Employee DA    : " + EmpDetails.empda + "<br>" +
+            "Employee GROSS : " + EmpDetails.empgross + "<br>" +
+            "Employee IT : " + EmpDetails.empit + "<br>" +
+            "Employee NET : " + EmpDetails.empnet
+
+
+
+
+
+        // document.getElementById("type").innerHTML =
+        //     typeof " " + "<br>" + typeof 10 + "<br>" + typeof 3.14 + "<br>" + typeof(3 + 4) + "<br>" + typeof(1234e5) + "<br>" + typeof(null) + "<br> <br>";
     </script>
 
 

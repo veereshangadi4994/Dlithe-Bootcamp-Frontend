@@ -1,0 +1,167 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- // Nav start// -->
+    <div class="main1">
+        <div class="header">
+            <h1>Los Olas</h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="home.html">Home</a> </li>
+                    <li><a href="about.html">About us</a> </li>
+                    <li><a href="contact.html">Contact</a> </li>
+                    <li><a href="register.html">Register</a> </li>
+                    <li><a href="login.html">Log-In</a> </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <h2>Great Choice of Hotel </h2>
+    </div>
+    <!-- // Nav html End// -->
+    <!-- // about  html start// -->
+    <div class="abt">
+        <h4 style="text-align: center; font-size: 25px;">About-Us</h4>
+        <img src="https://images.pexels.com/photos/860922/pexels-photo-860922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="margin-left: 13rem;" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, eius impedit? Dolor aut esse, quae iure reiciendis facilis veniam id ut, quidem ullam aperiam alias impedit sit, qui voluptates tempora. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Tempora quo atque natus recusandae voluptatibus, vitae libero quibusdam molestiae possimus minus excepturi consectetur vero quia magni placeat est dolorum. Laudantium, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Animi numquam eum autem quam ipsa excepturi, totam cupiditate temporibus error alias saepe. Facere placeat autem totam suscipit. Laudantium excepturi error animi. </p>
+
+    </div>
+    <!-- // about  html end// -->
+    <!-- // contact html start// -->
+    <h2> Contact-Us</h2>
+    <div class="form">
+        <label for="name">First Name</label>
+        <input type="text" name="username">
+        <label for="name">Last Name</label>
+        <input type="text" name="username">
+        <label for="country">Country</label>
+        <br>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <div>
+            <label for="subject">Message</label>
+        </div>
+        <div>
+            <textarea id="subject" name="subject" style="width: 400px; height: 100px;"></textarea>
+        </div>
+        <br>
+        <button>Submit</button>
+    </div>
+    <!-- // contact html end// -->
+    <!-- //register html start// -->
+    <div>
+        <h2>Register with Us</h2>
+        <div class="form">
+            <label for="name">Full Name</label>
+            <input type="text" name="name">
+            <label for="name">Mobile Number</label>
+            <input type="text" name="number">
+            <label for="name">Email Address</label>
+            <input type="email" name="name">
+            <label for="password">Password</label>
+            <input type="text" name="password">
+            <br>
+            <button>Register Now</button>
+        </div>
+        <!-- //register html end// -->
+        <!-- //login html start// -->
+        <div>
+            <h2>Log-In</h2>
+            <div class="form">
+                <label for="name">User Name</label>
+                <input type="text" name="username">
+                <label for="password">Password</label>
+                <input type="text" name="password">
+                <br>
+                <button>Login</button>
+            </div>
+
+        </div>
+        <!-- //login html start// -->
+
+</body>
+<style>
+    /* nav css Start */
+    
+    .main1 {
+        background: url(https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center no-repeat;
+        background-size: cover;
+        background-position: fixed;
+        height: 100vh;
+    }
+    
+    .main1 h2 {
+        text-align: center;
+        position: relative;
+        top: 30%;
+        color: black;
+        font-size: 45px;
+        font-family: 'Times New Roman', Times, serif
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    
+    .nav ul {
+        display: flex;
+    }
+    
+    .nav ul li {
+        list-style: none;
+        margin-left: 20px;
+        padding: 10px;
+        font-weight: bold;
+    }
+    
+    .nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .nav ul li {
+        padding: 10px;
+    }
+    /* nav css Start */
+    /* contact login register css start */
+    
+    .form {
+        padding: 0 4rem;
+    }
+    
+    input {
+        display: block;
+        width: 400px;
+    }
+    
+    .form button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: .7rem 1rem;
+        outline: none;
+    }
+    
+    #country {
+        width: 400px;
+        height: 25px;
+    }
+</style>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASICS OF HTML</title>
+    <!--Exterenal Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Internal Stylesheet-->
+    <style>
+        h6 {
+            text-align: right;
+            background-color: rgb(10, 190, 166);
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+            font-size: large;
+        }
+        
+        li {
+            color: blue;
+            font-size: large;
+        }
+        
+        pre {
+            background-color: rgb(231, 231, 140);
+            color: rgb(114, 42, 42);
+        }
+        
+        table {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        th {
+            height: 25px;
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+            color: rgb(7, 175, 58);
+        }
+        
+        tr:nth-child(even) {
+            background-color: antiquewhite;
+            color: brown;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: rgb(215, 221, 250);
+            color: brown;
+        }
+        
+        tr:hover {
+            background-color: rgb(0, 255, 170);
+            color: rgb(255, 123, 0);
+        }
+        
+        iframe {
+            margin-left: 15rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Inline Stylesheet-->
+    <h1 style="background-color:bisque;text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">WELCOME TO HTML TAGS</h1>
+    <h6>HYPERTEXT MARKUP LANGUAGE</h6>
+    <hr>
+    <pre>Hi all,
+
+        Welcome to DLithe Web development Bootcamp
+        Hope you all enjoy the session.
+
+        Thanks & Regards
+        ABC
+    </pre>
+    <!--Block level element-->
+    <p style="background-color: rgb(97, 228, 125);">Lorem <b>ipsum dolor sit amet</b>, <i>consectetur</i> adipisicing elit. <mark>Consequatur accusantium</mark> soluta consequuntur quibusdam fugit dolorum, porro praesentium aut excepturi eius beatae quaerat cupiditate itaque perferendis aliquid minus
+        velit possimus reprehenderit.</p>
+    <p>x<sub>2</sub></p>
+    <p>x<sup>2</sup></p>
+    <!--Inline level element-->
+    <span style="background-color: rgb(102, 215, 243);">Hello</span>
+    <br>
+    <!--Links in HTML-->
+    <!--Navigation-->
+    <a href="https://www.google.com/" target="_blank" title="Google Search engine">Google</a>
+    <br>
+    <!--image tag-->
+    <img src="assets/pexels-photo-2882568.jpeg" height="200px" width="300px" alt="HTML">
+    <br>
+    <!--EMOJIES-->
+    &#128512;&#128516;
+    <!--LISTS-->
+    <!--ordered,unordered,definition list-->
+    <ol type="I">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+    <br>
+    <ul type="circle">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <ol>
+        <ul>
+            <li><a href="assets/pexels-photo-2882568.jpeg">HTML</a></li>
+        </ul>
+        <ul>
+            <li><a href="assets/CSSTutorial.png">CSS</a></li>
+        </ul>
+    </ol>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+    </dl>
+    <dl>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+    </dl>
+    <!--Entities-->
+    &lt;div id=&quot;character&quot;&gt;
+    <br>
+    <!--audio tag-->
+    <audio controls autoplay muted>
+        <source src="assets/eminem.mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <!--video tag-->
+    <video width="800px" height="400px" controls poster="assets/pexels-photo-2882568.jpeg">
+        <source src="assets/pexels-tima-miroshnichenko-5377268.mp4" type="video/mp4">
+    </video><br>
+    <!--iframes-->
+    <!--embed another document in the current document-iframes-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.729575420368!2d77.54775941499629!3d12.925094490886417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fdfd6391453%3A0x4662827b839e02e8!2sDLithe%20Consultancy%20Services%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1648383500004!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+    <iframe src="https://www.dlithe.com" height="400px" width="400px"></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tUP5S4YdEJo?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <a href="https://www.google.com/webhp?igu=1" target="google" title="Google Search engine">Google</a>
+
+    <!--TABLES-->
+    <table>
+        <caption>Trainee Details</caption>
+        <thead>
+            <tr>
+                <th>TID</th>
+                <th>TName</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td>John</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Sam</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Peter</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Jancy</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Nancy</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Jack</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--colspan in tables-->
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th colspan="2">Mobile</th>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>John</td>
+            <td>945983649</td>
+            <td>945983649</td>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Peter</td>
+            <td>945983649</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Jancy</td>
+            <td>945983649</td>
+            <td>945983649</td>
+        </tr>
+
+    </table>
+
+    <!--tables with rowspan-->
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <td>100</td>
+            <td>101</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Mobile</th>
+            <td>987654783</td>
+            <td>987654783</td>
+        </tr>
+        <tr>
+            <td>9637546728</td>
+            <td>987654783</td>
+        </tr>
+    </table>
+</body>
+
+</html>

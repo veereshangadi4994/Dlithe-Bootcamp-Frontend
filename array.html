@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        // 1 declaration & display of array//
+        var countries = ["INDIA", "USA", "UK"]
+        document.write(countries + "<br>" + "<br>")
+
+
+        // 2 declr of arr length//
+        document.write(countries.length + "<br>" + "<br>");
+
+        // push adding element at end of array//
+        countries.push("UAE", "RUSSIA", "UKRAINE") + "<br>" +
+            document.write(countries + "<br>" + "<br>")
+
+        // unshift adding element at starting//
+        countries.unshift("UAE", "RUSSIA", "UKRAINE") + "<br>"
+        document.write(countries + "<br>")
+
+        //pop deleting element at the end using index number//
+        countries.pop(1, 2);
+        document.write(countries + "<br>")
+
+        // shift deleting the first element using index number//
+        countries.shift(1, 2)
+        document.write(countries + "<br>")
+
+        // splice declaring  elements in array//
+        var cars = ["BMW", "AUDI", "RR", "BENZ"];
+        document.write(cars + "<br>");
+        // adding element at 1 index number //
+
+        cars.splice(1, 0, 'JAGUAR');
+        document.write(cars + "<br>");
+
+
+        // deleting 4th index & adding element @4//
+        cars.splice(4, 1, 'THAR JEEP');
+        document.write(cars + "<br>");
+
+        // deleting for 3rd and 4th & adding 2 elements
+        cars.splice(3, 2, 'SAFARI', 'HYUNDAI');
+        document.write(cars + "<br>" + "<hr>");
+
+        //// adding two array with concatination///
+        var Fruits1 = ["orange", "apple", "kiwi"];
+        var Fruits2 = ["papaya", "banana", "graps"];
+        var Fruits = Fruits1.concat(Fruits2);
+        document.write(Fruits + "<br>");
+
+        ///adding again two fruits to the array//
+        var Fruits = Fruits.concat("guava", "strawberry");
+        document.write(Fruits + "<br>");
+
+        /// adding two digits to array//
+        var Fruits = Fruits.concat("9", "10");
+        document.write(Fruits + "<br>");
+
+        //displaying  array of fruits with index number////
+        var iterateindex = Fruits.entries();
+        for (var item of iterateindex) {
+            document.write(item + "<br>");
+        }
+
+        // reversing the array fruits///
+        Fruits.reverse();
+        document.write(Fruits + "<br>" + "<hr>")
+
+        //IndexOf any element in array it displays//
+
+        var bikes = ["BULLET", "YMR6", "DOMINAR", "KTM", "PULSAR", "HIMALAYAN"];
+        var results = bikes.indexOf("KTM")
+        document.write(results + "<br>")
+
+        // displays the last indexof //
+        var results1 = bikes.lastIndexOf("DOMINAR")
+        document.write(results1 + "<br>" + "<hr>")
+
+        //displays the same as thr in string//
+        document.write(bikes.toString() + "<br>");
+        document.write(bikes.join() + "<br>");
+
+        //slice display the index no 1 and 3 if we give 4///
+        var result2 = bikes.slice(1, 4);
+        document.write(result2 + "<br>");
+
+        // deletes the 5 index no and 0 index no ///
+        var result3 = bikes.slice(-5, -1);
+        document.write(result3 + "<br>" + "<hr>");
+
+        //sort setting number from ascending to descending//
+        var number = [6, 2, 8, 1, 4, 7, 0];
+        document.write(number.sort() + "<br>");
+
+        //filter by changing the value its displays the 
+        var empname = ["John", "Peter", "Sam", "Paul", "Jancy", "Mary"];
+        var result4 = empname.filter(empname => empname.length == 4);
+        document.write(result4);
+    </script>
+
+</body>
+
+</html>
