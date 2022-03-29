@@ -9,15 +9,15 @@
 
 <body>
     <!-- // Nav start// -->
-    <div class="main1">
+    <div id="home" class="main1">
         <div class="header">
             <h1>Los Olas</h1>
             <div class="nav">
                 <ul>
-                    <li><a href="home.html">Home</a> </li>
-                    <li><a href="about.html">About us</a> </li>
-                    <li><a href="contact.html">Contact</a> </li>
-                    <li><a href="register.html">Register</a> </li>
+                    <li><a href="#home">Home</a> </li>
+                    <li><a href="#about">About us</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                    <li><a href="#register">Register</a> </li>
                     <li><a href="login.html">Log-In</a> </li>
 
                 </ul>
@@ -28,51 +28,66 @@
     </div>
     <!-- // Nav html End// -->
     <!-- // about  html start// -->
-    <div class="abt">
+    <div id="about" class="abt" style="background-color: rgb(184, 184, 252);">
         <h4 style="text-align: center; font-size: 25px;">About-Us</h4>
         <img src="https://images.pexels.com/photos/860922/pexels-photo-860922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="margin-left: 13rem;" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, eius impedit? Dolor aut esse, quae iure reiciendis facilis veniam id ut, quidem ullam aperiam alias impedit sit, qui voluptates tempora. Lorem ipsum dolor sit amet consectetur adipisicing
+        <p style="font-size: 25px;"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, eius impedit? Dolor aut esse, quae iure reiciendis facilis veniam id ut, quidem ullam aperiam alias impedit sit, qui voluptates tempora. Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Tempora quo atque natus recusandae voluptatibus, vitae libero quibusdam molestiae possimus minus excepturi consectetur vero quia magni placeat est dolorum. Laudantium, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Animi numquam eum autem quam ipsa excepturi, totam cupiditate temporibus error alias saepe. Facere placeat autem totam suscipit. Laudantium excepturi error animi. </p>
+            Animi numquam eum autem quam ipsa excepturi, totam cupiditate temporibus error alias saepe. Facere placeat autem totam suscipit. Laudantium excepturi error animi. </i></p>
 
     </div>
     <!-- // about  html end// -->
     <!-- // contact html start// -->
-    <h2> Contact-Us</h2>
-    <div class="form">
+
+
+    <div id="contact" class="form" style="background-color: cadetblue; height: 450px;">
+        <h2 style="text-align: center;"> Contact-Us</h2>
+        <div style="float: right;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15374.51833864733!2d73.7519372!3d15.5579756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x946547858e087826!2sLas%20Olas%2C%20Baga%20Beach!5e0!3m2!1sen!2sin!4v1648465120996!5m2!1sen!2sin" width="600"
+                height="300" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
         <label for="name">First Name</label>
-        <input type="text" name="username">
+        <input type="text" name="username" placeholder="First Name">
         <label for="name">Last Name</label>
-        <input type="text" name="username">
+        <input type="text" name="username" placeholder="Last Name">
         <label for="country">Country</label>
         <br>
         <select id="country" name="country">
+            <option value="australia"></option>
+            <option value="australia">India</option>
           <option value="australia">Australia</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
         </select>
+
         <div>
             <label for="subject">Message</label>
         </div>
         <div>
-            <textarea id="subject" name="subject" style="width: 400px; height: 100px;"></textarea>
+            <textarea id="subject" name="subject" placeholder="Message.." style="width: 400px; height: 100px;"></textarea>
         </div>
         <br>
         <button>Submit</button>
+
+
+
     </div>
+
     <!-- // contact html end// -->
     <!-- //register html start// -->
-    <div>
+    <div id="register" class="register" style="background-color: rgb(102, 228, 169);">
         <h2>Register with Us</h2>
         <div class="form">
             <label for="name">Full Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" placeholder="Name">
             <label for="name">Mobile Number</label>
-            <input type="text" name="number">
+            <input type="number" name="number" placeholder="Mobile Number">
             <label for="name">Email Address</label>
-            <input type="email" name="name">
+            <input type="email" name="name" placeholder="Email">
             <label for="password">Password</label>
-            <input type="text" name="password">
+            <input type="password" name="password" placeholder="Password">
             <br>
             <button>Register Now</button>
         </div>
@@ -82,9 +97,9 @@
             <h2>Log-In</h2>
             <div class="form">
                 <label for="name">User Name</label>
-                <input type="text" name="username">
+                <input type="text" name="username" placeholder="User Name">
                 <label for="password">Password</label>
-                <input type="text" name="password">
+                <input type="password" name="password" placeholder="Password">
                 <br>
                 <button>Login</button>
             </div>

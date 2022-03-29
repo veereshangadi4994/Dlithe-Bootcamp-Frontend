@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROL STATEMENTS</title>
+</head>
+
+<body>
+    <pre style="font-size: large;">
+        CONTROLS STATEMENTS
+        ----------------------
+        1. CONDITIONAL
+            A. IF-ELSE
+                a. simple if-only true part
+                b. if-else-true and false
+                c. else if- multiple conditions
+                d. nested if- outer if(inner if)
+            B. SWITCH-CASE
+                Multiple Conditions for a single variable
+        2. LOOPING
+            A. ENTRY-CONTROLLED
+                a. for
+                b. while
+            B. EXIT-CONTROLLED
+                a. do-while
+    </pre>
+    <script>
+        //Relational Operators- > < >= <= == !=
+        //Logical Operators- && || ^
+        // If statement 
+        var num1 = 10;
+        if (num1 > 0) {
+            document.write("Num1 is the Positive");
+        }
+        document.write("<hr>" + "<br>")
+
+        // IF ELSE //
+
+        var chr1 = 'b';
+        if (chr1 == 'a' || chr1 == 'e' || chr1 == 'i' || chr1 == 'o' || chr1 == 'u') {
+
+            document.write("chracter is vowel");
+        } else {
+            document.write("chracter is not vowel");
+        }
+        document.write("<br><hr>");
+        // IF ELSE IF //
+        var num2 = 2;
+        if (num2 == 1) {
+            document.write("SUNDAY");
+        } else if (num2 == 2) {
+            document.write("MONDAY");
+        } else if (num2 == 3) {
+            document.write("TUESDAY");
+        } else if (num2 == 4) {
+            document.write("WEDNESDAY");
+        } else if (num2 == 5) {
+            document.write("THURSDAY");
+        } else if (num2 == 6) {
+            document.write("FRIDAY");
+        } else if (num2 == 7) {
+            document.write("SATURDAY");
+        } else {
+            document.write("invalid number");
+        }
+
+        document.write("<br><hr>");
+        //switch case//
+        var op = "-";
+        var num3 = 20;
+        var num4 = 15;
+        switch (op) {
+            case "+":
+                result = num3 + num4;
+                document.write("addition = " + result);
+                break;
+            case "-":
+                result = num3 - num4;
+                document.write("substraction = " + result);
+                break;
+            case "/":
+                result = num3 / num4;
+                document.write("division = " + result);
+                break;
+            case "*":
+                result = num3 * num4;
+                document.write("multiplication = " + result);
+                break;
+            default:
+                document.write("Invalid");
+        }
+
+        document.write("<br><hr>");
+        //looping statements for,do while,while //
+        //for loop//
+        var i = 1;
+        var j = 1;
+        for (i = 1; i <= 5; i++) {
+            document.write("<br>");
+            for (j = 1; j < i; j++) {
+                document.write(" " + j);
+            }
+        }
+
+        document.write("<br><hr>");
+        // while loop calculates until its false//
+        var a = 988;
+        var sum = 0;
+        while (a != 0) {
+            sum = sum + (a % 10);
+            a = (a / 10);
+            a = Math.floor(a);
+        }
+        document.write("sum of 3 digits " + sum);
+
+        document.write("<br><hr>");
+        // do while//
+        var i = 1;
+        var n = 5;
+        var sum1 = 0;
+        do {
+            sum1 = sum1 + i;
+            i++;
+        }
+        while (i <= n);
+        document.write("sum of 5 number" + sum1);
+    </script>
+
+</body>
+
+</html>
