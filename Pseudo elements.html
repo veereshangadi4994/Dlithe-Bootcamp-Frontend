@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        body {
+            background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e236e60c-a2aa-4afe-b422-81eb5f87e16a/d92pf1o-45bfff0e-f1f5-4e45-8c72-015ac22672a0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UyMzZlNjBjLWEyYWEtNGFmZS1iNDIyLTgxZWI1Zjg3ZTE2YVwvZDkycGYxby00NWJmZmYwZS1mMWY1LTRlNDUtOGM3Mi0wMTVhYzIyNjcyYTAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.VQ1HgdjgR7DtXGeHG260ttS-h6ljxC_3Y-7f1g046Sw");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        p::first-letter {
+            color: red;
+            font-size: large;
+        }
+        
+        p::first-line {
+            background-color: aqua;
+        }
+        
+         ::marker {
+            color: blueviolet;
+        }
+        
+         ::selection {
+            color: crimson;
+            background-color: bisque;
+        }
+        
+        h3::before {
+            content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFMuZzdobrj3gSX-Q8-AEaVwsFFz8OW0mo31AYTPlyCJHbYOeg75F0B0LzXt9-7LxtQQ&usqp=CAU");
+        }
+        
+        h3::after {
+            content: url("https://cdn.mos.cms.futurecdn.net/Vp9WvV7YKdH4k8sKRePcE8-320-80.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="background-color:bisque;text-align:center">Welcome to Pseudo Elements</h3>
+    <hr>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quidem ipsa facere sed id, assumenda eum sint enim. Asperiores fugit saepe, accusamus dolore quaerat tenetur similique. Voluptatibus perspiciatis deserunt optio.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nobis labore repellendus deserunt voluptates sapiente aliquam veritatis, eligendi perferendis voluptatibus, fuga non, accusamus minima ducimus veniam harum perspiciatis facere? Sint!</p>
+    <hr>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+
+</body>
+
+</html>

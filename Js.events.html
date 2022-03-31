@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="btn" type="button" onclick="Message()">Click</button>
+    <button class="btn" type="button" style="background-color: rgb(90, 213, 218);" ondblclick="addition(32,2,3)"> Addition</button>
+    <button class="btn" type="button" style="background-color: rgb(82, 243, 61);" ondblclick="Substraction(3,21,3)">Substraction</button>
+    <button class="btn" type="button" style="background-color: rgb(228, 240, 70);" onclick="division(3,2,34)">Division</button>
+    <button class="btn" type="button" style="background-color: rgb(140, 113, 241);" onmouseover="multipication(3,2,34)">Multiplication</button>
+
+    <script>
+        //Default Function/Function with no parameters/arguements
+        function Message() {
+            document.write("Welcome to Javascript Functions & Events Concept");
+        }
+        //Function with 3 Parameters
+        function addition(num1, num2, num3) {
+            document.write(num1 + num2 + num3);
+        }
+
+        function Substraction(num1, num2, num3) {
+            document.write(num1 - num2 - num3);
+        }
+
+        function division(num1, num2, num3) {
+            document.write(num1 / num2 / num3);
+        }
+
+        function multipication(num1, num2, num3) {
+            document.write(num1 * num2 * num3);
+        }
+    </script>
+    <style>
+        .btn {
+            font-size: large;
+            background-color: rgb(245, 163, 87);
+        }
+    </style>
+
+</html>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Submit -->
+    <button type="button" onclick="submit()">Submit</button>
+    <!-- Ask Me -->
+    <button type="button" onclick="AskName()">Click!!!</button>
+    <hr>
+    <button type="button" onclick="GetList()">Social Media</button>
+    <ul id="list">
+        <li>
+            <a href="https://www.facebook.com">Facebook</a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com">Instagram</a>
+
+        </li>
+        <li>
+            <a href="https://www.twitter.com"> Twitter</a>
+        </li>
+    </ul>
+    <p id="para" style="color:blue"></p>
+    <hr>
+    <!-- Anchor tags  -->
+    <div> <button type="button" onclick="ChangeAnchorAttributes()">Anchor</button></div>
+    <a id="myAnchor" href="https://www.google.com" title="Google">Google</a>
+    <hr>
+    <!-- change content  -->
+    <button type="button" onclick="ChangeParaContent()">Training Details</button>
+    <input type="text" id="cname" placeholder="Enter the Course Name">
+    <p>Hello Everyone!!! How is the <i id="course">Training </i> Training going on ? </p>
+    <hr>
+</body>
+
+<script>
+    /// Submit 1 //
+    function submit() {
+        var msg = confirm("Do you want to Exit?")
+        if (msg) {
+            alert("See you soon!!!")
+            window.location = "https://www.google.com";
+        } else {
+            alert("Thank you for staying on this page.")
+        }
+
+    }
+    // Ask ME //
+    function AskName() {
+        var name = prompt("name ");
+        alert("Hello " + name);
+    }
+    // List //
+    function GetList() {
+        var listitems = document.getElementById("list").innerHTML;
+        document.getElementById("para").innerHTML = listitems;
+    }
+
+    //Change the Anchor tag attributes
+    function ChangeAnchorAttributes() {
+        document.getElementById("myAnchor").innerHTML = "Dlithe";
+        document.getElementById("myAnchor").href = "https://www.Dlithe.com";
+        document.getElementById("myAnchor").target = "_blank";
+        document.getElementById("myAnchor").title = "Dlithe";
+    }
+    // change para content // 
+    function ChangeParaContent() {
+        var coursename = document.getElementById("cname").value;
+        document.getElementById("course").innerHTML = coursename;
+    }
+</script>
+
+</html>

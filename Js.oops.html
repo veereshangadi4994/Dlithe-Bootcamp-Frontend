@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        ///  diplaying employee through using property and key value
+        const employee = {
+            empid: 101,
+            empname: "Arun",
+            designation: "SD"
+        }
+        document.write(employee.empid + "<br>");
+        document.write(employee.empname + "<br>");
+        document.write(employee.designation + "<br>" + "<hr>");
+        ///
+        // using a for loop and displaying the employee
+        var details = "";
+        for (var emp in employee) {
+            details += employee[emp] + "<br> ";
+        }
+        document.write(details + "<br>" + "<hr>");
+        //////
+
+        //Adding a property to an employee salary object
+        employee.Salary = 55000;
+        var details = "";
+        for (var emp in employee) {
+            details += employee[emp] + "<br> ";
+        }
+        document.write(details + "<br>" + "<hr>");
+        /////
+
+        //delete a property of employee id
+        delete employee.empid;
+        var details = "";
+        for (var emp in employee) {
+            details += employee[emp] + "<br> ";
+        }
+        document.write(details + "<br>" + "<hr>");
+        /////
+
+        ///  diplaying student through using property and key value
+        const student = {
+            studentid: 111,
+            studentname: "chetan"
+        }
+        document.write(student.studentid + "<br>");
+        document.write(student.studentname + "<br>" + "<hr>");
+        /////
+
+        ///nested objects///
+        const student1 = {
+            studentid: 111,
+            studentname: "chetan",
+            studentdetails: {
+                studentdetail1: "EC",
+                studentdetail2: "3rd Sem",
+                studentdetail3: "College:XYZ",
+                studentdetail4: "Ph no:12345"
+            }
+        }
+
+
+        document.write(student1.studentid + "<br>");
+        document.write(student1.studentname + "<br>");
+        document.write(student1.studentdetails.studentdetail1 + "<br>");
+        document.write(student1.studentdetails.studentdetail2 + "<br>");
+        document.write(student1.studentdetails.studentdetail3 + "<br>");
+        document.write(student1.studentdetails.studentdetail4 + "<br>" + "<hr>");
+        //////
+
+        //Function in an object
+        const branches = {
+            course1: "CS",
+            course2: "ME",
+            course3: "EC",
+            GetBranches: function() {
+                return this.course1 + "," + this.course2 + "," + this.course3 + "<br>";
+            }
+        }
+        document.write(branches.GetBranches() + "<hr>");
+        /////
+
+        //Pass by reference in objects
+        //empname and emp1 share the same memory address
+        function GetName(empname) {
+            empname.employeename = "Peter";
+        }
+        const emp1 = {
+            employeename: "John"
+        };
+        document.write(emp1.employeename + "<br>");
+        GetName(emp1);
+        document.write(emp1.employeename + "<br>");
+    </script>
+</body>
+
+</html>

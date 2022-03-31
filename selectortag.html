@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        h1 {
+            background-color: rgb(179, 255, 0);
+            color: blue;
+        }
+        
+        #demo {
+            text-align: center;
+            color: rgb(204, 68, 95);
+            background-color: rgb(165, 117, 226);
+        }
+        
+        .demo1 {
+            text-align: right;
+            color: blueviolet;
+            text-decoration: underline;
+        }
+        
+        h3,
+        h4,
+        p {
+            background-color: rgb(195, 255, 127);
+            color: brown;
+        }
+        
+        h5.demo2 {
+            background-color: rgb(255, 0, 0);
+        }
+        
+        * {
+            color: chartreuse;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to Element selector</h1>
+        <h1>Welcome to Element Selector</h1>
+    </div>
+    <hr>
+    <h2 id="demo">Welcome to ID Selector</h2>
+    <p class="demo1">Welcome to P tag Class Selector</p>
+    <pre class="demo1">Welcome to  Pre tagClass Selector</pre>
+    <span class="demo1">Welcome to  Span tag Class Selector</span>
+    <h3>Welcome to Grouping Selector</h3>
+    <h4>Welcome to Grouping Selector</h4>
+    <p>Welcome to Grouping Selector</p>
+    <h5 class="demo2">Welcome to h5 Class Selector</h5>
+    <h5>No Style</h5>
+    <p class="demo2">demo2 style cannot be applied since its specifically created for h5 element</p>
+    <pre>Hello</pre>
+    <h6>Hello</h6>
+</body>
+
+</html>

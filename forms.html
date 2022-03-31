@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-image: url(https://media.istockphoto.com/vectors/blue-abstract-geometric-dynamic-shape-paper-layers-subtle-background-vector-id1284691550?k=20&m=1284691550&s=612x612&w=0&h=M_gHdREUJ4UwnL4G5jrrO1jtat9pLDiv1ErqwxuQgLE=); background-repeat: no-repeat;width: 100%; background-size: cover;">
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form action="" method="Post" style="background-color: burlywood; width: 600px;">
+        <fieldset>
+            <legend>
+                Trainee Details
+            </legend>
+            <span style="display: flex; margin-top: 2rem;">
+                 <label>FirstName :</label>
+                 <input type="text" name="fname" required>
+                &nbsp;&nbsp; <label>LastName :</label><br>
+                  <input type="text" name="lname" required><br>
+            </span>
+
+            <label>Email</label><br>
+            <input type="email" name="email" required size="69.5px"><br>
+
+            <label>Password</label><br>
+            <input type="password" name="password" required size="69"><br>
+            <label> Confirm Password</label><br>
+            <input type="password" name="password" required size="69"><br>
+            <label>Gender</label><br>
+            <div style="display: flex;">
+                <input type="radio" id="gender" name="gender" value="Female">Female<br>
+                <input type="radio" id="gender" name="gender" value="Male">Male<br><br>
+            </div>
+            <label>Address</label><br>
+            <textarea></textarea><br>
+            <label>Select Branches</label><br>
+            <select name="course">
+                <optgroup style="background-color:orangered">
+                    <option>CS</option>
+                    <option>IT</option>
+                   <option>EC</option>
+                    <option>EE</option>
+                </optgroup>                
+            </select><br><br>
+            <br>
+            <input type="submit" value="Register" style="font-size: large;">
+        </fieldset>
+    </form>
+    <hr>
+    <div>
+        <form>
+            <div style="display: flex;">
+                Select Date:<input type="date">Select Date and Time: <input type="datetime-local"><br><br>
+            </div>
+            <hr>
+            <label>Select Branches</label><br>
+            <input type="radio" value="CS"><label>CS</label><br>
+            <input type="radio" value="EC"><label>EC</label><br>
+            <input type="radio" value="IT"><label>IT</label><br><br>
+
+            <label>Mobile Number :</label>
+            <input type="tel" pattern="[0-5]{10}" required>
+
+            <label>Telephone Number</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

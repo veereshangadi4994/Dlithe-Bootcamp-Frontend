@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        //using hover& click event effect to display show n hide//
+        $(document).ready(function() {
+            $("#hide").hover(function() {
+                $("p").hide();
+            });
+            $("#show").hover(function() {
+                $("p").show();
+            });
+        });
+        ////
+        /// toggle  is for hide n show at once////
+        $(document).ready(function() {
+            $("#toggle").click(function() {
+                $("p").toggle();
+            });
+        });
+        ////
+    </script>
+</head>
+
+<body>
+
+    <!-- //using hover& click event effect to display show n hide// -->
+    <div style="text-align: center; background-color: rgb(253, 8, 8); ">
+        <h1>Hide and Show Effects</h1>
+
+        <p><img src="https://www.xtrafondos.com/wallpapers/resized/mitad-hombre-arana-mitad-venom-5508.jpg?s=large" width="400px" alt=""></p>
+
+        <button id="hide" style="background-color: darkgoldenrod; font-size: large;   ">Hide</button>
+        <button id="show" style="background-color: rgb(17, 184, 11); font-size: large;   ">Show</button>
+    </div>
+    <!-- ///// -->
+    <hr>
+    <br>
+
+    <!-- /// toggle is for hide n show at once//// -->
+
+    <div style="text-align: center; font-size: large; background-color: rgb(8, 8, 8);">
+        <h1 style="color: aliceblue;">Toggle Image</h1>
+
+        <p><img src="https://wallpaper.dog/large/20421410.jpg " width="400px " alt=" "></p>
+        <button id="toggle" style=" font-size: large; background-color: rgb(14, 10, 223); ">Toggle between hiding and showing the links</button>
+        <hr>
+    </div>
+
+
+</html>
