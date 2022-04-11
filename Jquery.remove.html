@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ Remove</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //// remove content////   1
+        $(document).ready(function() {
+            $("#one").click(function() {
+                $("#div1").remove();
+                $("#img1").remove();
+                $("#img2").remove();
+            });
+        });
+        //// remove content////   1
+
+        //////  empty the content ////   2
+
+        $(document).ready(function() {
+            $("#two").click(function() {
+                $("#div2").empty();
+            });
+        });
+        //////  empty the content ////   2
+
+        ///// Filter the content //// 3
+        $(document).ready(function() {
+            $("#three").click(function() {
+                //$("p").remove(".test"); //Filter the Elements to be Removed
+                $("p").remove(".test1, .demo");
+            });
+
+        });
+
+        ///// Filter the content //// 3
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <!-- ////// 1 ////// -->
+    <div>
+        <button id="one">Remove div & image element</button>
+        <br><br>
+        <div id="div1" style="display: flex;">
+            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui dolores facere illum, quod pariatur reprehenderit magni ipsum voluptas,<br>  explicabo obcaecati quos tempore provident asperiores mollitia. Dolore porro quasi totam molestias. Lorem
+                ipsum, dolor sit amet <br>   consectetur adipisicing elit. Iste atque rerum vel, sit voluptates repudiandae suscipit optio tempora,   veniam obcaecati veritatis sapiente autem.</span>
+            <img src="https://m.media-amazon.com/images/I/51WRaOtap-L._SX355_.jpg" height="100px" width="100px" id="img1">
+
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/carbon-fiber-shelby-mustang-1600685276.jpg?crop=0.9988636363636364xw:1xh;center,top&resize=480:*" height="100px" width="100px" id="img2">
+        </div>
+    </div>
+    <br>
+    <hr>
+    <!-- ////////  1 ///// -->
+
+    <!-- /////////  2 ///////// -->
+    <button id="two">Empty div element</button>
+    <div id="div2" style="height:150px;width:300px;border:1px solid black;background-color:rgb(199, 240, 104);margin-top: 10px;">
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptas laudantium incidunt quos voluptates perspiciatis minima voluptatibus facere iste ullam ut ipsam necessitatibus aspernatur quibusdam pariatur, cumque, inventore hic quae!</p>
+    </div>
+    <!-- /////////  2 ///////// -->
+
+    <hr><br>
+    <!-- /////////  3 ///////// -->
+
+
+    <div>
+        <button id=three>Filter paragraph element</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde accusamus blanditiis exercitationem aperiam atque quam voluptatem facilis ab iusto illo at facere recusandae, laborum officia, temporibus, dolorem perferendis hic.</p>
+
+        <br>
+        <p class="test">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, maiores enim molestias a aut eum recusandae dignissimos maxime vel, ut voluptas expedita consequuntur reprehenderit eos eligendi nulla et in nisi?</p>
+        <br>
+        <p class="test1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque quam beatae quis magnam iure. Vitae velit fuga recusandae unde, nihil error necessitatibus enim exercitationem saepe molestiae iste accusantium distinctio.</p>
+        <br>
+        <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quaerat harum unde totam quisquam? Explicabo accusamus odio beatae possimus non assumenda, excepturi, odit iste, eaque vero quos culpa placeat qui?</p>
+
+    </div>
+
+    <!-- /////////  3 ///////// -->
+</body>
+<style>
+    .test {
+        color: red;
+        font-size: 20px;
+    }
+    
+    .test1 {
+        color: rgb(207, 33, 241);
+        font-size: 20px;
+    }
+    
+    .demo {
+        color: green;
+        font-size: 25px;
+    }
+</style>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Prototype</title>
+</head>
+
+<body>
+    <pre style="font-size: large;">
+        -JS is a prototype based language
+        -Each object-prototype object
+        
+    </pre>
+    <script>
+        //function without prototype
+        function course() {
+            courseid = "Id" + 101;
+            coursename = "Html";
+        }
+        var s = new course();
+        //new property (added to the object s)
+        s.fees = 15000;
+        document.write(s.fees + "<br>");
+        document.write(courseid + "<br>" + coursename + "<br>" + "<hr>");
+        //When other objects are created they cannot access course
+        var s1 = new course();
+        document.write(s1.coursename + "<br>" + "<hr>");
+
+        //function emp
+        function std() {
+            this.stdid = 101;
+            this.stdname = "Chetan";
+        }
+        //prototype- is automatically attached to the function
+        std.prototype.branch = "CS";
+
+
+        //create an instance - constructor function - emp() - function is loaded in the memory
+        var stddetails = new std();
+        document.write(stddetails.branch + "<br>");
+        std.prototype = {
+            branch: "EE"
+        };
+        var stddetails1 = new std();
+        document.write(stddetails1.branch + "<br>" + "<hr>");
+        var stddetails2 = new std();
+        document.write(stddetails2.branch + "<br>" + "<hr>");
+
+        std.prototype.GetDetails = function() {
+            var stddetails3 = new std();
+            return this.stdid + " " + this.stdname + " " + this.branch;
+
+        }
+        const std1 = new std();
+        document.write(std1.GetDetails() + "<br>");
+    </script>
+
+</body>
+
+</html>

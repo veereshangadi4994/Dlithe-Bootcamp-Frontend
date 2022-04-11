@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaining Method</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        //// 1 ////
+        $(document).ready(function() {
+            $(".btn1").click(function() {
+                $("p")
+                    .css("color", "white") // remove toggle effect and fadeout
+                    .animate({
+                        width: "100%"
+                    })
+                    .animate({
+                        fontSize: "46px"
+                    })
+                    .fadeOut(3000);
+            });
+            $(".btn2").click(function() {
+                $("p").removeAttr("style");
+            });
+        });
+        //// 1 ////
+    </script>
+    <!-- ////2//// -->
+    <script>
+        $(document).ready(function() {
+            $("#img").click(function() {
+                $("#p1").css({
+                    "background-image": "url(https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max )",
+                    "  background-repeat": "no-repeat",
+                    " position": "relative;",
+                    "background - attachment": "fixed;",
+                    "background-size": "cover;",
+                    " height": "250px;",
+                    " width": "250px;"
+                }).fadeOut(8000)
+            });
+        });
+    </script>
+    <!-- ////2//// -->
+
+</head>
+
+<style>
+    /* ///// 1  /// */
+    
+    p {
+        color: rgb(248, 240, 245);
+        font-weight: bolder;
+        font-size: large;
+    }
+    
+    div {
+        width: 450px;
+        height: 300px;
+        padding: 20px;
+        font-size: medium;
+        text-align: center;
+        margin: auto;
+        background-color: rgb(12, 12, 12);
+        font-weight: bold;
+        border: 3px solid rgb(115, 230, 8);
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+</style>
+<!-- /* ///// 1 /// */ -->
+<!-- ///// 2 /// -->
+<style>
+    #p1 {
+        border: 2px solid black;
+        background-color: rgb(101, 142, 231);
+        height: 500px;
+        width: 500px;
+    }
+</style>
+<!-- ///// 2 /// -->
+
+<body>
+    <!-- ///// 1 //// -->
+    <div>
+        <p> Welcome To jQuery Chaining</p>
+        <button type="button" class="btn1">Click to see the effect</button>
+        <button type="button" class="btn2">Reset</button>
+    </div>
+    <!-- ///// 1 //// -->
+    <hr>
+
+    <!-- ////// 2 ///// -->
+    <center> <button id="img"> Click the button to change the background image of above span element. </button>
+
+        <div id="p1"> </div>
+    </center>
+
+
+</body>
+
+</html>

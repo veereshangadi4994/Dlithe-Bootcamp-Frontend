@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        ////// hide event ////    1
+        $(document).ready(function() {
+            //jQuery Syntax For Event Methods
+            $("button").click(function() {
+                $("#btn").hide();
+            });
+        });
+        ////// hide event ////    1
+
+        ////// mouse enter /////  2
+        $(document).ready(function() {
+            $("#p").mouseenter(function() {
+                alert("You entered para content...!");
+            });
+        });
+        ////// mouse enter /////  2
+
+        ///// hover event////   3
+        $(document).ready(function() {
+            $("#h1").hover(function() {
+                    alert("You entered h1...! para content");
+                },
+                function() {
+                    alert("Bye! You now leave h1..! para content");
+                });
+        });
+        ///// hover event////   3
+
+        ////// on method //////  4
+        $(document).ready(function() {
+            $("input").focus(function() {
+                $(this).css("background-color", "red");
+            });
+            $("input").blur(function() {
+                $(this).css("background-color", "grey");
+            });
+        });
+        ////// on method //////  4
+
+        ///click or move the mouse on the line it changes the color ////
+        $(document).ready(function() {
+            $("h3").on({
+                mouseenter: function() {
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function() {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function() {
+                    $(this).css("background-color", "yellow");
+                }
+            });
+        });
+        ///click or move the mouse on the line it changes the color ////
+    </script>
+</head>
+
+<body>
+    <!-- ////// hide event //// 1 -->
+    <center> <button>Click Me to Hide</button></center>
+    <img src="/assets/CSSTutorial.png" width="100px" height="100px" id="btn" alt="">
+    <!-- ////// hide event //// 1 -->
+    <br><br>
+    <hr>
+
+    <!-- /////// mouse enter //// 2 -->
+    <p id="p">Enter this Paragraph content
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni placeat, fugit esse voluptatibus ducimus qui sequi porro magnam voluptas tempore hic eos autem cum iste explicabo est incidunt ipsum a?</p>
+    </p>
+    <br><br>
+    <hr>
+    <!-- //////// hover event //// /  3 -->
+    <h1 id="h1">This is a h1 Para content
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat debitis reprehenderit inventore voluptatem maiores veniam vel. Veniam sint saepe magni tempora culpa eius, odit ex assumenda quas repudiandae ipsam doloribus?</p>
+    </h1>
+
+    <!-- //////// hover event //// /  3 -->
+    <br><br>
+    <hr>
+    <!-- //////// on method  focus & blur//// /  3 -->
+
+    Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="fullname"><br> Email:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" name="email"><br>Password:<input type="Password" name="Password">
+    <!-- //////// on method  focus & blur//// /  3 -->
+    <br><br>
+    <hr>
+    <!-- ///click or move the mouse on the line it changes the color //// -->
+    <h3>Click or move the mouse pointer over this h1.</h3>
+    <!-- ///click or move the mouse on the line it changes the color //// -->
+
+
+
+
+</body>
+
+</html>

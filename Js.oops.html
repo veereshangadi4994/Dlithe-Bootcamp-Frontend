@@ -90,14 +90,14 @@
         //Pass by reference in objects
         //empname and emp1 share the same memory address
         function GetName(empname) {
-            empname.employeename = "Peter";
+            empname.employeename = "chetan";
         }
         const emp1 = {
-            employeename: "John"
+            employeename: "shivaraj"
         };
         document.write(emp1.employeename + "<br>");
         GetName(emp1);
-        document.write(emp1.employeename + "<br>");
+        document.write(emp1.employeename + "<br>" + "<hr>");
     </script>
 </body>
 

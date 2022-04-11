@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("p").click(function() {
+                var div = $("div");
+                div.animate({
+                    height: '200px',
+                    opacity: '0.4'
+                }, "slow");
+                div.animate({
+                    width: '200px',
+                    opacity: '0.8'
+                }, "slow");
+                div.animate({
+                    height: '100px',
+                    opacity: '0.4'
+                }, "slow");
+                div.animate({
+                    width: '100px',
+                    opacity: '0.8'
+                }, 5000);
+            });
+        });
+
+        // $(document).ready(function() {
+        //     $("p").click(function() {
+        //         var img = $("img");
+        //         img.animate({
+        //             height: '150px',
+        //             opacity: '0.4'
+        //         }, "slow");
+        //         img.animate({
+        //             width: '150px',
+        //             opacity: '0.8'
+        //         }, "slow");
+        //         img.animate({
+        //             height: '200px',
+        //             opacity: '0.4'
+        //         }, "slow");
+        //         img.animate({
+        //             width: '200px',
+        //             opacity: '0.8'
+        //         }, "slow");
+        //         img.animate({
+        //             height: '400px',
+        //             opacity: '0.4'
+        //         }, "fast");
+        //         img.animate({
+        //             width: '400px',
+        //             opacity: '0.8'
+        //         }, "fast");
+        //         img.animate({
+        //             height: '100px',
+        //             opacity: '0.4'
+        //         }, "slow");
+        //         img.animate({
+        //             width: '100px',
+        //             opacity: '0.8'
+        //         }, "slow");
+        //         img.fadeOut(7000);
+
+        //     });
+        // });
+    </script>
+</head>
+
+<body>
+
+    <button>  <p style="text-align: center;color: blue;font-size: larger;">Start Animation</p></button>
+    <div>
+        <div style="background:#06e6da;position:absolute;border-radius: 10px;">
+            <img src="https://wallpaper.dog/large/20421410.jpg " alt="">
+        </div>
+    </div>
+
+    <!-- <div>
+        <img src="img4.jpg" style="height: 100px;width: 100px;border-radius: 10px;margin-top: 300px;">
+    </div> -->
+
+</body>
+
+</html>

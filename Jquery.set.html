@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // text() - Sets or returns the text content of selected elements  1  
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("#test1").text("Hello Trainees!");
+            });
+        });
+    </script>
+    <script>
+        // html() - Sets or returns the content of selected elements(including HTML markup)  2 
+        $(document).ready(function() {
+            $("#btn2").click(function() {
+                $("#test2").html("<b>Welcome To Dlithe !</b>");
+            });
+        });
+    </script>
+
+    <script>
+        // val() - Sets or returns the value of form fields 3
+        $(document).ready(function() {
+            $("#btn3").click(function() {
+                $("#test3").val("FS Bootcamp 2022");
+            });
+        });
+    </script>
+    <script>
+        /// old text to new text ////  4
+        $(document).ready(function() {
+            $("#bt1").click(function() {
+                $(".tst1").text(function(i, origText) {
+                    return "Old text: " + origText + " New text: New Course Bootstrap!";
+                });
+            });
+        });
+    </script>
+
+    <script>
+        //// old html to new html ///5
+        $(document).ready(function() {
+            $("#bt2").click(function() {
+                $("#tst2").html(function(i, origText) {
+                    return "Old html: " + origText + " New html: New Course Bootstrap!";
+                });
+            });
+        });
+    </script>
+
+    <script>
+        // change link value/// 6
+        $(document).ready(function() {
+            $("#a").click(function() {
+                $("#m").attr("href", "https://www.dlithe.com/").attr("title", "Welcome to Dlithe")
+                $("#m").text("www.dlithe.com");
+            });
+        });
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <center>
+        <h1> Set Property in Jquery</h1>
+    </center>
+
+
+    <!-- /////  1  /// -->
+    <div>
+        <p id="test1">TEXT paragraph.</p>
+        <button id="btn1">Set Text</button>
+    </div>
+    <!-- /////  1  /// -->
+    <hr>
+    <!-- /////  2  /// -->
+    <div>
+        <p id="test2">HTML paragraph.</p>
+        <button id="btn2">Set HTML</button>
+    </div>
+    <!-- /////  2  /// -->
+    <hr>
+    <!-- /////  3  /// -->
+    <div>
+        <button id="btn3">Set Value</button>
+        <p>Company: <input type="text" id="test3" value="Dlithe"></p>
+    </div>
+    <!-- /////  3 /// -->
+    <hr>
+    <!-- //// 4 //// -->
+    <div>
+        <p class="tst1">Old course Jquery....!</p>
+        <button id="bt1">Show Old/New Text</button>
+    </div>
+    <!-- //// 4 //// -->
+
+    <hr>
+    <!-- ///// 5 //// -->
+    <div>
+        <p id="tst2">Old course Jquery....!.</p>
+        <button id="bt2">Show Old/New HTML</button>
+    </div>
+    <!-- ///// 5 //// -->
+    <hr>
+    <!-- ///// 6 //// -->
+    <div>
+        <p><a href="https://www.Google.com" id="m" title="Welcome to Google">www.google.com</a></p>
+        <button id="a">Change link Value</button>
+    </div>
+    <!-- ///// 6 //// -->
+
+
+
+</body>
+
+</html>

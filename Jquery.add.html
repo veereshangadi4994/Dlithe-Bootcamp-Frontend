@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        ///// 1 Append ////
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("p").append(" <b> Welcome to Dlithe Bootcamp...!</b>.");
+            });
+        });
+        ///// 1 Append ////
+
+        ///// 2 prepend ////
+        $(document).ready(function() {
+            $("#btn2").click(function() {
+                $("h1").prepend("Let's Join The Bootcamp");
+            });
+        });
+        ///// 2 prepend ////
+
+        // 3 append list ////
+        $(document).ready(function() {
+            $("#btn3").click(function() {
+                $("ul").append("<li>JQUERY</li>", "<li>BOOTSTRAP </li>");
+            });
+        });
+        // 3 append list ////
+
+        // 4 prepend list ////
+        $(document).ready(function() {
+            $("#btn4").click(function() {
+                $("ol").prepend("<li>4.JQUERY</li>", "<li>5.BOOTSTRAP </li>");
+            });
+        });
+        ////  // 4 prepend list ////
+
+        ///// Append several items///
+        function appendText() {
+            var txt1 = "<p>Hi</p>"; // Create text with HTML
+            var txt2 = $("<p></p>").text("Everyone"); // Create text with jQuery
+            var txt3 = document.createElement("h1");
+            txt3.innerHTML = "Welcome to Dlithe Bootcamp"; // Create text with DOM
+            $("body").append(txt1, txt2, txt3); // Append new elements  Try after and before
+            $("body").append(document.getElementById("text1").value);
+        }
+        ///// Append several items///
+
+        ///// prepend several items///
+        function prependText() {
+            var txt1 = "<p>Hi</p>"; // Create text with HTML
+            var txt2 = $("<p></p>").text("Everyone"); // Create text with jQuery
+            var txt3 = document.createElement("h1");
+            txt3.innerHTML = "Welcome to Dlithe Bootcamp"; // Create text with DOM
+            $("body").prepend(txt3, txt2, txt1); // Append new elements  Try after and before
+            $("body").prepend(document.getElementById("text1").value);
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- ///// 1 Append //// -->
+    <div>
+        <button id="btn1">Append text</button>
+        <p>HELLO</p>
+    </div>
+    <!-- ///// 1 Append ////-->
+
+    <!-- ///// 2 prepend ////-->
+    <div>
+        <button id="btn2">Prepend text</button>
+        <h1>Training</h1>
+    </div>
+    <!-- ///// 2 prepend ////-->
+
+    <!-- ////   3 append list //// -->
+    <div>
+        <button id="btn3">Append List</button>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+    </div>
+    <!-- //// append list //// -->
+
+    <!-- ////  4 Prepen list //// -->
+    <div>
+        <button id="btn4">Append List</button>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ol>
+    </div>
+    <!-- //// Prepen list //// -->
+
+    <div style="display: flex;">
+        <!-- //// 5 Append Several items// -->
+        <button onclick="appendText()">Append several items</button>
+
+
+
+
+        <!-- //// 5 Prepend Several items// -->
+        &nbsp;&nbsp;<button onclick="prependText()">prepend several items</button>
+    </div>
+
+
+
+</body>
+
+</html>

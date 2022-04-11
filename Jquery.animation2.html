@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("div")
+                    .animate({
+                        left: '400px'
+                    }, "slow")
+                    .animate({
+                        fontSize: '60px'
+                    }, 1000)
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <center> <button>Start Animation</button></center>
+
+
+    <div style="background:#0a0a0a;height:100px;width:800px;position:absolute;border-radius: 5px;color: rgb(248, 207, 26); margin-top: 5rem;"><i> Welcome To Dlithe Bootcamp....!</i></div>
+
+</body>
+
+</html>

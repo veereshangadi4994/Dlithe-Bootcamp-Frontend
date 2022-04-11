@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ Get</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // diplaying bold content text in alert pop up ///// 1
+
+        // text() - Sets or returns the text content of selected elements
+
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                alert("Text: " + $("#test").text());
+            });
+        });
+        // diplaying bold content text in alert pop up ///// 1
+
+
+        // diplaying bold content HTML in alert pop up ///// 2
+
+        // html() - Sets or returns the content of selected elements(including HTML markup)
+        $(document).ready(function() {
+            $("#btn2").click(function() {
+                alert("HTML: " + $("#test").html());
+            });
+        });
+        // diplaying bold content HTML in alert pop up ///// 2
+
+        //////  3  //////
+        // val() - Sets or returns the value of form fields
+        $(document).ready(function() {
+            $("#cg").click(function() {
+                alert("COMPANY: " + $("#test1").val());
+            });
+        });
+        //////  3  //////
+
+        //////  4 //////
+        // Get Attributes - attr()
+        // The jQuery attr() method is used to get attribute values.
+        $(document).ready(function() {
+            $("#1").click(function() {
+                alert($("#g2").attr("href"));
+            });
+        });
+        //////  4  //////
+    </script>
+
+
+</head>
+
+<body>
+
+    <center>
+        <h1> Get Property in Jquery</h1>
+    </center>
+
+    <!-- ////////   1    /////// -->
+    <div>
+        <p id="test">Welcome to <b>bold content</b> text in a paragraph.</p>
+        <button id="btn1">Show Text</button>
+    </div>
+    <!-- ////////   1    /////// -->
+    <hr>
+    <!-- ////////   2    /////// -->
+    <div>
+        <p id="test">Welcome to HTML <b>bold Content</b> text in a paragraph.</p>
+        <button id="btn2">Show HTML</button>
+    </div>
+    <!-- ////////   2    /////// -->
+    <hr>
+    <!-- ////////   3    /////// -->
+    <div>
+        <p>COMPANY: <input type="text" id="test1" value="Dlithe"></p>
+        <button id="cg">Show Value</button>
+    </div>
+    <!-- ////////   3    /////// -->
+    <hr>
+    <!-- ////////   4   /////// -->
+    <div>
+        <p><a href="https://www.g2techsoft.com" id="g2">www.g2techsoft.com</a></p>
+        <button id="1">Show href Value</button>
+    </div>
+    <!-- ////////   4    /////// -->
+
+
+
+</body>
+
+</html>

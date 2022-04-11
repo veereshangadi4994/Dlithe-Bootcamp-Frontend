@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Aniamtion</title>
+    <script>
+        ///1
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#ani1").animate({
+                    left: '900px'
+                });
+            });
+        });
+    </script>
+    <!-- ///// -->
+
+    <script>
+        ////2///
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#mani").animate({
+                    left: '550px',
+                    opacity: '0.5',
+                    height: '200px',
+                    width: '200px'
+                });
+            });
+        });
+    </script>
+    <!-- //////2 end -->
+
+    <!-- ////// 3 //// -->
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#growani").animate({
+                    left: '550px',
+                    height: '+=50px',
+                    width: '+=50px'
+                });
+            });
+        });
+    </script>
+    <!-- ///// 4 //// -->
+    <script>
+        //toggle
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#toggle").animate({
+                    height: 'toggle' //width: 'toggle'
+                });
+            });
+        });
+    </script>
+    <!-- ///// 4 //// -->
+
+    <!-- ///// 5 //// -->
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#ani").animate({
+                    left: '1000px'
+                });
+            });
+        });
+    </script>
+    <!-- ///// 5 //// -->
+</head>
+
+<body>
+    <!-- ///////   1   //// -->
+    <center> <button>Lets Go...!</button></center>
+    <div>
+        <div style="position:absolute;" id="ani1">
+            <img src="/assets/car.gif" width="100%" height="400px" alt="">
+        </div>
+    </div>
+    <!-- ///////   1 end  //// -->
+
+    <!-- ////// 2 /// -->
+    <div style="margin-top: 20rem;">
+        <hr>
+        <center> <button>Lets Go...!</button></center>
+        <div>
+            <img src="https://static8.depositphotos.com/1338574/831/i/600/depositphotos_8318731-stock-photo-gold-star.jpg" id="mani" style="position: relative;" height="100px" width="100px" alt="">
+        </div>
+    </div>
+    <hr>
+    <!-- ////// 2 /// -->
+
+    <!-- //////3 //// -->
+    <center> <button>Blow It</button></center>
+    <div style="position:relative;margin-top: 20px;">
+        <img src="https://media.istockphoto.com/vectors/pink-realistic-balloon-vector-id860024132?k=20&m=860024132&s=612x612&w=0&h=B6N00fAAtSSnfAV4ncSRdGiM4pGYgpXhafDhMlkiG1w=" height="100px" width="100px" id="growani" alt="">
+    </div>
+    <!-- //////3 //// -->
+
+
+
+    <!-- ///// 4//// -->
+    <center> <button>Toggle</button></center>
+    <div>
+        <img src="https://static.india.com/wp-content/uploads/2015/09/Horror-414x246.jpg" height="200px" width="400px" id="toggle" alt="">
+    </div>
+
+
+    <!-- ////5/// -->
+    <center> <button>Move Left</button></center>
+    <img src="https://static.india.com/wp-content/uploads/2015/09/Horror-414x246.jpg" width="100px" height="100px" style="position:absolute;" id="ani" />
+
+
+
+
+
+
+</body>
+
+</html>

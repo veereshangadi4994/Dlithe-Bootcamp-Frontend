@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //$(selector).stop(stopAll,goToEnd);
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideDown(5000);
+            });
+            $("#stop").click(function() {
+                $("#panel").stop();
+            });
+        });
+    </script>
+    <script>
+        ///call back function
+        $(document).ready(function() {
+            $("#one").click(function() {
+                $("p").hide("slow", function() {
+                    alert("Thank You For Calling Me!!!!!!!");
+                });
+            });
+        });
+    </script>
+    </script>
+    //Without callback parameter //The example below has no callback parameter, and the alert box will be displayed before the hide effect is completed
+    <script>
+        $(document).ready(function() {
+            $("#two").click(function() {
+                $("h4").hide("fast");
+                alert("Hi Thank you for coming....");
+            });
+        });
+    </script>
+    <!-- /////? -->
+    <!-- ////// -->
+    <script>
+        $(document).ready(function() {
+            $("#3").click(function() {
+                $("#1").css("color", "red").slideUp(2000).slideDown(2000).fadeOut("fast").css("font-size", "30px");
+                $("#d1").slideToggle(1000).css("color", "purple").css("font-size", "30px");
+            });
+        });
+    </script>
+    <!-- /////// -->
+</head>
+
+<style>
+    #panel,
+    #flip {
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        background-color: white;
+        color: rgb(247, 6, 6);
+        border: solid 1px rgb(22, 21, 22);
+        font-weight: bold;
+        font-variant: small-caps;
+    }
+    
+    #panel {
+        padding: 50px;
+        display: none;
+        background-image: url(https://wallpaper.dog/large/20421410.jpg);
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+    }
+</style>
+
+
+<body>
+    <div>
+        <center><button id="stop" style="font-size: larger; background-color: black; color: white; border-radius: 3px;">Stop sliding...!!</button></center>
+
+        <div id="flip">Click to View</div>
+        <div id="panel"></div>
+    </div>
+    <hr>
+
+    <!-- //////? -->
+    <div>
+        <center><button id="one" style="font-size: larger; background-color: black; color: white; border-radius: 3px;">Callback Function</button></center>
+
+        <p style="text-align: center;"> <img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2019/09/Tom-Holland-as-Spider-Man-with-Shield-in-Captain-America-Civil-War.jpg" height="400px" width="100%" alt="">
+            <span style="font-size: 55px; ">Hello Everyone...!!!</span>
+        </p>
+    </div>
+    <hr>
+    <!-- /////// -->
+    <div>
+        <center><button id="two" style="font-size: larger; background-color: black; color: white;">Without callback parameter</button></center>
+
+        <h4 style="text-align: center;">Thank you for visiting Bye!!!!!!!</h4>
+    </div>
+    <hr>
+    <!-- //////// last -->
+
+    <div id="d1" style="font-size: large;margin-left: 300px;">
+        <img src="https://wallpaper.dog/large/20421410.jpg" width="200px" height="200px" alt="">
+    </div>
+    <br>
+
+    <center> <button id="3" style="font-size: larger; background-color: black; color: white;">Chaining</button></center>
+    <p id="1">hello</p>
+
+    <!-- //////// last -->
+</body>
+
+</html>

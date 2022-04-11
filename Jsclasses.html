@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Classes and Objects</title>
+</head>
+
+<body>
+    <script>
+        class student {
+            //Constructor with 2 parameters
+            constructor(id, name) {
+                    this.id = id;
+                    this.name = name;
+                }
+                //Function
+            Details() {
+                return this.id + " " + this.name;
+            }
+        }
+        //instance/object creation
+        var std = new student(101, "Anil");
+        document.write(std.id + "<br>" + "<hr>");
+        document.write(std.name + "<br>" + "<hr>");
+        document.write(std.Details());
+    </script>
+
+</body>
+
+</html>
